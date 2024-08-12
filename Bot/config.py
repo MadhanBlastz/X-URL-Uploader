@@ -21,17 +21,16 @@ class Config(object):
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7211200915:AAHuMftJMaIvzgYwWSFD10_Cu21F0FrYk3Q")
 
-    APP_ID = int(os.environ.get("APP_ID", 21661450))
-    API_HASH = os.environ.get("79612bc71908f95372808520a7eeee74")
-
+    APP_ID = int(os.environ.get("APP_ID", '21661450'))
+    API_HASH = environ.get('API_HASH', '79612bc71908f95372808520a7eeee74')
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID',2021408974))
+    OWNER_ID = int(os.environ.get('OWNER_ID','2021408974'))
 
     # MongoDB
-    DATABASE_URL = os.environ.get("DATABASE_URL")
+    DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://Madhan:N0password@cluster0.y0vtta6.mongodb.net/?retryWrites=true&w=majority")
 
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
