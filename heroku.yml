@@ -1,3 +1,7 @@
 build:
   docker:
-    worker: Dockerfile.heroku
+    worker: Dockerfile.heroku  # Points to the Dockerfile for the worker process
+
+run:
+  worker: python3 -m Bot  # Command to run your bot
+
