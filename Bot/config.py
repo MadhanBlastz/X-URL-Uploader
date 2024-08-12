@@ -22,7 +22,7 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7211200915:AAHuMftJMaIvzgYwWSFD10_Cu21F0FrYk3Q")
 
     APP_ID = int(os.environ.get("APP_ID", '21661450'))
-    API_HASH = environ.get('API_HASH', '79612bc71908f95372808520a7eeee74')
+    API_HASH = os.environ.get('API_HASH', '79612bc71908f95372808520a7eeee74')
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
