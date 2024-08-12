@@ -19,16 +19,16 @@ class Config(object):
 
     DUMP_ID = int(os.environ.get("DUMP_ID", 0))
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7211200915:AAHuMftJMaIvzgYwWSFD10_Cu21F0FrYk3Q")
 
-    APP_ID = int(os.environ.get("APP_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    APP_ID = int(os.environ.get("APP_ID", 21661450))
+    API_HASH = os.environ.get("79612bc71908f95372808520a7eeee74")
 
     # Authorized User IDS
     AUTH_USERS = [int(id) for id in os.environ.get(
         "AUTH_USERS", "").split()] if os.environ.get("AUTH_USERS", None) else None
 
-    OWNER_ID = int(os.environ.get('OWNER_ID'))
+    OWNER_ID = int(os.environ.get('OWNER_ID',2021408974))
 
     # MongoDB
     DATABASE_URL = os.environ.get("DATABASE_URL")
